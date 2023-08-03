@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./public/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="public/css/style.css" />
+    <!-- Icons do Lucide -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <title>Barraca do Inu</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__menu">
+        <div class="header__user">
+          <h2>Bem vindo,</h2>
+          <p>Srta Fluffy</p>
+        </div>
+        <div class="header__points">
+          <h2>Seus pontos,</h2>
+          <p>1250</p>
+        </div>
+      </div>
+      <div class="header__navbar">
+        <nav class="navbar container">
+          <a href="#">
+            <i data-lucide="home" class="navbar__home"></i>
+          </a>
+          <a href="#">
+            <i data-lucide="user" class="navbar__icon"></i>
+          </a>
+          <div class="navbar__content-circle">
+            <a href="#">
+              <i data-lucide="search" class="navbar__search"></i>
+            </a>
+          </div>
+          <div class="navbar__circle-shadow"></div>
+          <div class="navbar__circle"></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="news__container grid">
+          <div class="news__content">
+            <h1>Fique saudável com 5 porções de frutas diariamente!</h1>
+            <a class="button" href="/login">Confira</a>
+          </div>
+          <div class="news__image-container">
+            <img
+              class="news__image"
+              src="./public/images/banner.png"
+              alt="Mascote da barra do inu"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 class="section__title">Categorias</h2>
+        <div class="categories__container grid">
+          <div class="categories__content">
+            <div class="categories__card categories__card-fruits">
+              <i data-lucide="apple" class="categories__icon"></i>
+            </div>
+            <h3 class="categories__name">Frutas</h3>
+          </div>
+          <div class="categories__content">
+            <div class="categories__card categories__card-vegetable">
+              <i data-lucide="leafy-green" class="categories__icon"></i>
+            </div>
+            <h3 class="categories__name">Verduras</h3>
+          </div>
+          <div class="categories__content">
+            <div class="categories__card categories__card-fish">
+              <i data-lucide="fish" class="categories__icon"></i>
+            </div>
+            <h3 class="categories__name">Peixes</h3>
+          </div>
+          <div class="categories__content">
+            <div class="categories__card categories__card-cereais">
+              <i data-lucide="wheat" class="categories__icon"></i>
+            </div>
+            <h3 class="categories__name">Cereais</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 class="section__title">Frutas do Dia</h2>
+
+        <div class="fruits__container grid">
+          <div class="fruits__card fruits__one">
+            <i data-lucide="heart" class="fruits__icon like"></i>
+            <img src="./public/images/laranja.png" alt="Laranja" />
+          </div>
+          <div class="fruits__card fruits__two">
+            <i data-lucide="heart" class="fruits__icon"></i>
+            <img src="./public/images/uva.png" alt="" />
+          </div>
+          <div class="fruits__card fruits__three">
+            <i data-lucide="heart" class="fruits__icon"></i>
+            <img src="./public/images/melancia.png" alt="" />
+          </div>
+          <div class="fruits__card fruits__four">
+            <i data-lucide="heart" class="fruits__icon"></i>
+            <img src="./public/images/brocolis.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
